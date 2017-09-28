@@ -1,0 +1,16 @@
+<h1>Movie Details</h1>
+<img [src]="movieInfo.poster" alt="">
+<h2>Title: {{movieInfo.title}}</h2>
+<p>Year: {{movieInfo.year}}</p>
+<p>Director: {{movieInfo.director}}</p>
+<p>Actors</p>
+<ul>
+  <li *ngFor="let actor of movieInfo.actors">{{actor}}</li>
+</ul>
+<p>Genres</p>
+<ul>
+  <li *ngFor="let genre of movieInfo.genres">{{genre}}</li>
+</ul>
+<h3>Synopsis</h3>
+<p>{{movieInfo.synopsis}}</p>
+<a [routerLink]="['/']">Home</a>
